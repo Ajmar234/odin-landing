@@ -1,4 +1,4 @@
-a, p, h1, h2, h3, button {
+a, p, h1, h2, h3, h4, h5, button {
     font-family: Helvetica;
 }
 
@@ -16,21 +16,26 @@ a, p, h1, h2, h3, button {
 .opener {
     display: flex;  
     justify-content: center;
+    align-items: center;
     gap: 40px;
     padding: 100px;
 }
 
 .opener img {
+    height: auto;
     width: 500px;
 }
 
 .hero {
     width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #e5e7eb;
+.hero h1, h5, button {
+    margin: 0px;
 }
 
 .hero button {
@@ -39,9 +44,10 @@ a, p, h1, h2, h3, button {
     font-weight: bold;
     color: #f9faf8;
     border: none;
-    text-align: center;
-    padding: 10px 20px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 8px;
+    width: 150px;
 }
 
 a {
@@ -57,36 +63,131 @@ h1 {
 }
 
 h2 {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+h3 {
     font-size: 24px;
     color: #f9faf8;
 }
 
-h3 {
-    
+h4 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-
-
-.items {
-
+h5 {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight:lighter;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    gap: 25px;
+}
 
+.info h2 {
+    text-align: center;
+}
+
+.item_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    gap: 15px;
+}
+
+.item div {
+    height: 175px;
+    width: 175px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.item h5 {
+    text-align: center;
+    color: #1F2937
+}
 
 .quote {
     background-color: #e5e7eb;
     display: flex;
     justify-content: center;
+    padding: 100px;
 }
 
 .quote_text {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 825px;
 }
 
 .quote_text p {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+}
+
+.quote_text h4{
+    text-align: right;
+}
+
+.sign {
+    padding: 50px 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.call {
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 1000px;
+    gap: 150px;
+    align-items: center;
+}
+
+.call h4 {
+    margin: 0px;
+}
+
+.call div {
+    display: flex;
+    flex-direction: column;
+    color: #f9faf8;
+}
+
+.call button {
+    background-color: #3882f6;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9faf8;
+    border: 5px solid #f9faf8;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
